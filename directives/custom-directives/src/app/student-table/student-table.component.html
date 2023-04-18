@@ -1,0 +1,22 @@
+<app-student-header [title]="'Student Table'"></app-student-header>
+<table [ngStyle]="{'color':colors}">
+    <tr>
+        <th>
+            Name  
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Email
+        </th>
+    </tr>
+    <tr *ngFor="let data of studentTableData">
+        <td>{{data.Name}}</td>
+        <td>{{data.Age}}</td>
+        <td>{{data.Email}}</td>
+    </tr>
+</table>
+<button (click)="applyBlue()">Apply colour Blue</button>   
+<button (click)="applyRed()">Apply colour Red</button> 
+

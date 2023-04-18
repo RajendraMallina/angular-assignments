@@ -1,0 +1,20 @@
+<table *ngIf="show">
+    <tr>
+        <th>
+            Name  
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Email
+        </th>
+    </tr>
+    <tr *ngFor="let data of studentTableData">
+        <td>{{data.Name}}</td>
+        <td>{{data.Age}}</td>
+        <td>{{data.Email}}</td>
+    </tr>
+</table>
+<button (click)="showTable()">show table</button>   
+<button (click)="hideTable()">hide table</button> 

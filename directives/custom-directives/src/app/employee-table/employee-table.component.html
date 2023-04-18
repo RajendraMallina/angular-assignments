@@ -1,0 +1,20 @@
+<app-student-header [title]="'Employee Table'"></app-student-header>
+<table [ngClass]="changeClass?'table1':'table2'">
+    <tr>
+        <th>
+            Name  
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Email
+        </th>
+    </tr>
+    <tr *ngFor="let data of empTableData">
+        <td>{{data.Name}}</td>
+        <td>{{data.Age}}</td>
+        <td>{{data.Email}}</td>
+    </tr>
+</table>
+<button (click)="changeClasstable()">Apply another class</button> 

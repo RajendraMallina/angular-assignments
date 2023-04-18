@@ -1,0 +1,24 @@
+.table1 {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+  }
+  
+  .table1 td, .table1 th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .table1 tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+  .table2 , .table2 th, .table2 td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  .table2 th:nth-child(even), .table2 td:nth-child(even) {
+    background-color: #D6EEEE;
+  }
